@@ -1,9 +1,10 @@
-latexfile = oxford_poster
+latexfile = nu_poster
 figures = figure/*
+bibfile = paper.bib
 
 
 .PHONY: FORCE
-paper.pdf: FORCE #${figures, bibfile, bibfile2, bibfile3}
+paper.pdf: FORCE ${figures, bibfile}
 	./latexrun ${latexfile}.tex
 
 .PHONY: clean
