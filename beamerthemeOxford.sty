@@ -1,6 +1,6 @@
 % A beamer poster style for the University of Oxford. Atilim Gunes Baydin <gunes@robots.ox.ac.uk>, November 2016.
 % Based on the I6pd2 style created by Thomas Deselaers an Philippe Dreuw.
-\ProvidesPackage{beamerthemeNU}
+\ProvidesPackage{beamerthemeOxford}
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 % \RequirePackage{tangocolors}
@@ -11,25 +11,24 @@
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \definecolor{lightgrey}{rgb}{0.95,0.95,0.95} % Defines the color used for content box headers
 \definecolor{bluetinge}{rgb}{0.9,0.95,1}
-\definecolor{darkgreen}{rgb}{0,.4,0}
 \definecolor{oxfordblue}{RGB}{0,33,71} % Pantone 282, Hex #002147, RGB 0 33 71, CMYK 100 80 0 60
-\definecolor{red}{rgb}{0.8, 0.0, 0.0}
+\definecolor{darkgreen}{rgb}{0,.4,0}
 
-\setbeamercolor{headline}{fg=red,bg=white}
-\setbeamercolor{footline}{fg=red,bg=white}
+\setbeamercolor{headline}{fg=oxfordblue,bg=oxfordblue}
+\setbeamercolor{footline}{fg=oxfordblue,bg=white}
 \setbeamerfont{footline}{size=\large,series=\tt}
-\setbeamercolor{title in headline}{fg=red}
-\setbeamercolor{separation line}{bg=black}
-\setbeamercolor{author in headline}{fg=black}
-\setbeamercolor{institute in headline}{fg=black}
+\setbeamercolor{separation line}{bg=white}
+\setbeamercolor{title in headline}{fg=white}
+\setbeamercolor{author in headline}{fg=white}
+\setbeamercolor{institute in headline}{fg=white}
 
-\setbeamercolor{framesubtitle}{fg=white, bg=red}
-\setbeamercolor{author in head/foot}{fg=white, bg=red}
-\setbeamercolor{title in head/foot}{fg=white, bg=red}
+\setbeamercolor{framesubtitle}{fg=white, bg=oxfordblue}
+\setbeamercolor{author in head/foot}{fg=white, bg=oxfordblue}
+\setbeamercolor{title in head/foot}{fg=white, bg=oxfordblue}
 
 \setbeamercolor*{normal text}{fg=black, bg=white}
 \setbeamercolor*{block body}{bg=lightgrey,fg=oxfordblue}
-\setbeamercolor*{block title}{fg=white,bg=red}
+\setbeamercolor*{block title}{fg=white,bg=oxfordblue}
 \setbeamerfont{block title}{size=\large,series=\bf}
 \setbeamercolor{upper separation line head}{fg=oxfordblue}
 
@@ -86,7 +85,7 @@
         \vspace{-30pt}
         \begin{center}
          \hfill
-          \includegraphics[height=9cm]{figures/NU/NU_logo1.pdf}
+          \includegraphics[height=9cm]{ox_brand_cmyk_rev.pdf}
           %\begin{wrapfigure}{r}{0.35\linewidth}
             %\colorbox{white}{\includegraphics[width=.35\linewidth]{LiU_primary_black}} \\
             %\includegraphics[width=.35\linewidth]{uppsalalogo.png}
@@ -122,13 +121,21 @@
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \setbeamertemplate{footline}{
-  \begin{beamercolorbox}[sep=1em,wd=\paperwidth,leftskip=3cm,rightskip=3cm]{footlinecolor}
-    \hspace{0.3cm}%
-    \includegraphics[scale=0.07,height=100pt]{figures/NU/northeastern.pdf}
-    % \scriptsize{Seite \insertframenumber}
-    \hfill
-    \includegraphics[scale=0.30,height=100pt]{figures/NU/cybersecurity-privacy-institute-lockup.png}
-  \end{beamercolorbox}%
+  \begin{beamercolorbox}[wd=\paperwidth]{upper separation line foot}
+    \rule{0pt}{3pt}
+  \end{beamercolorbox}
+  
+  \leavevmode%
+%  \begin{beamercolorbox}[ht=2ex,leftskip=1em,rightskip=1em]{author in head/foot}%
+%    \texttt{\leftfoot}
+%    \hfill
+%    \texttt{\rightfoot}
+%    \vskip1ex
+%  \end{beamercolorbox}
+  %\vskip0pt%
+  %\begin{beamercolorbox}[wd=\paperwidth]{lower separation line foot}
+  %  \rule{0pt}{3pt}
+  %\end{beamercolorbox}
 }
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
